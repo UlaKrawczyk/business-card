@@ -409,11 +409,12 @@ body {
   .person__link {
     color: #E20613;
     text-decoration: none;
-    -webkit-transition: .4s;
-    -o-transition: .4s;
-    transition: .4s; }
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s; }
     .person__link:hover {
       color: #2C2141;
-      font-weight: bold; }
+      font-weight: bold;
+      letter-spacing: 1.5px; }
 
 /*# sourceMappingURL=main.css.map */
