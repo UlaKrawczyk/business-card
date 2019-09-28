@@ -51,6 +51,8 @@ body {
     width: 30%;
     border-radius: 50%;
     margin-right: 32px;
+    filter: brightness(1.6);
+    transition: .7s;
 
     @media(max-width: 752px) {
       width: 50%;
@@ -60,6 +62,10 @@ body {
     @media(max-width: 520px) {
       width: 70%;
       margin: 1rem auto 2rem auto;
+    }
+
+    &:hover {
+      filter: brightness(1.8) grayscale(.8);
     }
   }
 
@@ -75,6 +81,11 @@ body {
   &__position {
     font-family: $font-header;
     font-size: 20px;
+    transition: .4s;
+
+    &:hover {
+      text-shadow: 0.4rem .3rem 1rem rgba(#000, .8);
+    }
   }
 
   &__description {
@@ -95,5 +106,11 @@ body {
   &__link {
     color: $red;
     text-decoration: none;
+    transition: .4s;
+
+    &:hover {
+      color: $violet;
+      font-weight: bold;
+    }
   }
 }
