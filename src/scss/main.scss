@@ -1,16 +1,99 @@
 @import "_normalize";
 @import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,700&display=swap&subset=latin-ext');
 
 
 html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  box-sizing: border-box;
+  background-color: $violet;
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-text;
+  color: $violet;
+
+}
+
+.card {
+  background-color: #F8F8F8;
+  border-radius: 12px;
+  max-width: 624px;
+  width: 100%;
+  padding: 32px;
+  margin: 0 3rem 0 3rem;
+  box-shadow: 0.5rem .8rem 2rem 1rem rgba(#000, .6);
+}
+
+.person {
+  display: flex;
+  align-items: flex-start;
+
+  @media(max-width: 752px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.person__photo {
+  width: 30%;
+  border-radius: 50%;
+  margin-right: 32px;
+
+  @media(max-width: 752px) {
+    width: 50%;
+    margin: 1rem auto 2rem auto;
+  }
+
+  @media(max-width: 520px) {
+    width: 70%;
+    margin: 1rem auto 2rem auto;
+  }
+}
+
+.person__header {
+  margin-bottom: 32px;
+}
+
+.person__name {
+  margin: 0 0 8px 0;
+  font-size: 36px;
+}
+
+.person__position {
+  font-family: $font-header;
+  font-size: 20px;
+}
+
+.person__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.person__description--last {
+  margin-bottom: 0;
+}
+
+.person__special {
+  font-weight: normal;
+  color: $orange;
+}
+
+.person__link {
+  color: $red;
+  text-decoration: none;
 }
