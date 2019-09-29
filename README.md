@@ -11,3 +11,9 @@ Zapraszam do obejrzenia: [business card Ula Krawczyk](https://ulakrawczyk.github
 `git clone url...`
 
 `npm install`
+
+#### Wykorzystane technologie:
+ 
+`html5`
+
+`css`
