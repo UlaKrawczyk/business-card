@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,700&display=swap&subset=latin-ext');
-
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway:400,700&display=swap&subset=latin-ext");
 
 html {
   box-sizing: border-box;
@@ -25,24 +24,23 @@ body {
   align-items: center;
   font-family: $font-text;
   color: $violet;
-
 }
 
 .card {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   border-radius: 12px;
   max-width: 624px;
   width: 100%;
   padding: 32px;
   margin: 0 3rem 0 3rem;
-  box-shadow: 0.5rem .8rem 2rem 1rem rgba(#000, .6);
+  box-shadow: 0.5rem 0.8rem 2rem 1rem rgba(#000, 0.6);
 }
 
 .person {
   display: flex;
   align-items: flex-start;
 
-  @media(max-width: 752px) {
+  @media (max-width: 752px) {
     display: flex;
     flex-direction: column;
   }
@@ -51,21 +49,20 @@ body {
     width: 30%;
     border-radius: 50%;
     margin-right: 32px;
-    filter: brightness(1.6);
-    transition: .7s;
+    transition: 0.7s;
 
-    @media(max-width: 752px) {
+    @media (max-width: 752px) {
       width: 50%;
       margin: 1rem auto 2rem auto;
     }
 
-    @media(max-width: 520px) {
+    @media (max-width: 520px) {
       width: 70%;
       margin: 1rem auto 2rem auto;
     }
 
     &:hover {
-      filter: brightness(1.8) grayscale(.8);
+      filter: grayscale(0.9);
     }
   }
 
@@ -81,10 +78,11 @@ body {
   &__position {
     font-family: $font-header;
     font-size: 20px;
-    transition: .4s;
+    transition: 0.4s;
 
     &:hover {
-      text-shadow: 0.4rem .3rem 1rem rgba(#000, .8);
+      color: rgb(60, 33, 112);
+      text-shadow: 0.4rem 0.3rem 1rem rgba(#000, 0.8);
     }
   }
 
@@ -106,7 +104,7 @@ body {
   &__link {
     color: $red;
     text-decoration: none;
-    transition: .6s;
+    transition: 0.6s;
 
     &:hover {
       color: $violet;
