@@ -1,7 +1,7 @@
 # Ula Krawczyk Business-Card
 #### Please contact me via LinkedIn
 
-![my business card](github/cover.jpg)
+![my business card](github/cover2.jpg)
 
 Zapraszam do obejrzenia: [business card Ula Krawczyk](https://ulakrawczyk.github.io/business-card/)
 
